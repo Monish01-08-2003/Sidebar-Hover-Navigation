@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side-bar-hover</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- offcanvas nav bar -->
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/11480/11480420.png"
+      alt="more"
+      style="height: 50px"
+      class="btn"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#demo1"
+    />
+
+    <div class="offcanvas offcanvas-start" id="demo1">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title">
+          <p>Done With 💕 By,</p>
+          <h1>Monish R</h1>
+        </div>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <h3>Projects</h3>
+
+        <label for="gitLink">Explore My GitHub Profile</label>
+        <a href="https://github.com/Monish01-08-2003" id="gitLink" class="p"
+          >GitHub</a
+        >
+        <label for="linkedin">Explore My LinkedIn Profile</label>
+        <a href="www.linkedin.com/in/monish-r-b11325275" id="gitLink" class="p"
+          >LinkedIn</a
+        >
+        <br />
+      </div>
+    </div>
+    <!-- sidebar -->
+    <div class="sidebar">
+      <div class="hovercontainer">
+        <div class="sidebarcontent">
+          <a class="h5" href="mailto:monishr01.08.2003@gmail.com">Email</a>
+          <a class="h5" href="https://github.com/Monish01-08-2003/">Git-hub</a>
+          <a
+            class="h5"
+            href="https://www.instagram.com/srikumarantambaram/?hl=en"
+            >LinkedIn</a
+          >
+          <a class="h5" href="#">Naukri</a>
+          <button
+            type="button"
+            class="btn btn-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#myModal"
+          >
+            Scan-me
+          </button>
+        </div>
+        <div class="social">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/732/732200.png"
+            class="sidebaricon"
+            alt=""
+            \
+          />
+
+          <img src=https://cdn-icons-png.flaticon.com/512/11378/11378785.png
+          class="sidebaricon" alt="" />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/145/145807.png"
+            class="sidebaricon"
+            alt=""
+          />
+          <img
+            src="data:image/png;base64,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"
+            class="sidebaricon"
+            alt=""
+          />
+          <img class="sidebarqr" src="./imges/qr-code.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              Scan the QR code to get My Git-hub Profile
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+
+          <img
+            class="modalimg modal-body mx-auto"
+            src="./imges/qr-code.png"
+            alt=""
+          />
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  .sidebar {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .hovercontainer {
+    top: 150px;
+    position: relative;
+    overflow-wrap: hidden;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    text-align: end;
+  }
+  .social {
+    z-index: 1;
+    padding: 10px;
+    right: 0px;
+    display: flex;
+    position: fixed;
+    background-color: #242582ff;
+    width: 44px;
+    padding-left: 5px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 175px;
+  }
+  .sidebaricon {
+    position: relative;
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .sidebarcontent {
+    z-index: 1;
+    justify-content: center;
+    text-align: center;
+    transition-duration: 0.5s;
+    position: relative;
+    right: -145px;
+    overflow: hidden;
+    word-wrap: break-word;
+    color: rgb(255, 177, 242);
+    display: flex;
+    flex-direction: column;
+
+    height: 175px;
+    background: #242582ff;
+    backdrop-filter: blur(10px);
+    width: 12rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .sidebarcontent > a {
+    margin-right: 25px;
+
+    position: relative;
+
+    text-decoration: none;
+  }
+  .sidebarcontent > button {
+    width: 75px;
+    background-color: #ff8edeff;
+    color: #242582ff;
+    margin-left: 47px;
+  }
+  .sidebarqr {
+    margin-right: 50px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 5px;
+    margin-right: 3px;
+    height: 25px;
+    width: 25px;
+  }
+
+  .hovercontainer:hover .sidebarcontent {
+    right: 0px !important;
+  }
+  .modalimg {
+    height: 300px;
+    width: 300px;
+  }
+</style>
