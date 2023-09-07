@@ -20,7 +20,7 @@ Enhance your website's user experience with this stylish and functional sidebar 
 
 Here's an example of how the sidebar looks and functions:
 
-[Demo]([sidebar-hover-navigation.netlify.app](https://sidebar-hover-navigation.netlify.app/))
+[Demo](https://sidebar-hover-navigation.netlify.app/)
 
 
 ## Contributing
